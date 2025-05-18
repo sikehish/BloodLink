@@ -16,6 +16,7 @@ app.use(cors({
 
 app.use(cookieParser());
 app.use(express.json());
+  
 
 mongoose.connect("mongodb+srv://sparshmishra1:sparshmishra1@cluster0.m5ycaxb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }, (e) => {
 	console.log(e ? e : "Connected successfully to database");

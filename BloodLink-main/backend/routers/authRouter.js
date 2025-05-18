@@ -3,7 +3,6 @@ const { User, BloodBank } = require("../models/models");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
-// register
 
 router.post("/:handle", async (req, res) => {
     try {
